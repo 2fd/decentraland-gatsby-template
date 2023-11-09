@@ -39,7 +39,7 @@
   "devDependencies": {
     "@dcl/eslint-config": "^1.1.7",
     "@types/jest": "^29.5.2",
-    "@types/node": "^18.8.0",
+    "@types/node": "^20.9.0",
     "@types/react": "^17.0.62",
     "@types/react-helmet": "^5.0.21",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
