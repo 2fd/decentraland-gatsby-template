@@ -1,0 +1,14 @@
+##
+## Cloudflare Redirects
+##
+## Full documentation: https://developers.cloudflare.com/pages/platform/redirects/
+##
+## Only one redirect can be defined per line and must follow this format:
+##
+## ```txt
+##   [source] [destination] [code?]
+## ```
+##
+## > The [code] parameter is optional, and when not defined, will default to a
+## > 302 status code.
+##

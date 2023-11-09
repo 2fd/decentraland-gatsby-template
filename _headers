@@ -1,0 +1,40 @@
+##
+## Cloudflare Headers
+##
+## Full documentation: https://developers.cloudflare.com/pages/platform/headers/
+##
+## Header rules are defined in multi-line blocks. The first line of a block is
+## the URL or URL pattern where the rule's headers should be applied. On the
+## next line, an indented list of header names and header values must be written:
+##
+## ```txt
+##   [url]
+##     [name]: [value]
+## ```
+##
+## You can define as many `[name]: [value]`` pairs as you require on subsequent
+## lines.
+##
+## > Custom headers defined in the _headers file are not applied to responses
+## > from Functions, even if the Function route matches the URL pattern.
+##
+
+# Attach security headers to all responses.
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Permissions-Policy: autoplay=(self)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: upgrade-insecure-requests; default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.segment.com https://cdn.rollbar.com; form-action 'self'; media-src https: blob:; font-src https: data:; prefetch-src https: data:; style-src 'unsafe-inline' https: data:; img-src https: data:; connect-src https: wss: blob: data:; frame-src https: dcl:; child-src https: blob:; object-src 'none'; frame-ancestors 'none'
+
+# Set content type for source maps.
+/*.js.map
+  Content-Type: application/json
+
+/*.css.map
+  Content-Type: application/json
+
+# Set cache header for assets.
+# @see https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/caching/#static-files
+/static/*
+  Cache-Control: public,max-age=31536000,immutable
