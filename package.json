@@ -37,7 +37,7 @@
     "sharp": "^0.30.5"
   },
   "devDependencies": {
-    "@dcl/eslint-config": "^1.1.7",
+    "@dcl/eslint-config": "^1.1.12",
     "@types/jest": "^29.5.2",
     "@types/node": "^18.8.0",
     "@types/react": "^17.0.62",
