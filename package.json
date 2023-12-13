@@ -42,7 +42,7 @@
     "@types/node": "^18.8.0",
     "@types/react": "^17.0.62",
     "@types/react-helmet": "^5.0.21",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^4.33.0",
     "autoprefixer": "^10.4.15",
     "devcert": "^1.2.2",
