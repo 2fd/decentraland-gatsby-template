@@ -22,7 +22,7 @@
     "@dcl/schemas": "^9.2.0",
     "@worker-tools/router": "^0.3.0-pre.6",
     "decentraland-gatsby": "^5.86.3",
-    "gatsby": "4.23.0",
+    "gatsby": "5.13.0",
     "gatsby-plugin-manifest": "^4.25.0",
     "gatsby-plugin-postcss": "^5.25.0",
     "gatsby-plugin-react-helmet": "^5.25.0",
